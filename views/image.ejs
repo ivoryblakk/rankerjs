@@ -2,17 +2,17 @@
 
   <div class="center-align ">
     <form action="/<%= image._id %>" method="POST">
-      <img  style =" margin:auto; max-width:60%; height: 50vh;" src="<%= image.imageurl %>">
+      <img  style ="margin:auto; max-width: 273px;  max-height: 154px;" src="<%= image.imageurl %>">
       <!-- BUTTONS BELOW -->
       <div>
       
         <button class="circle card-panel hoverable" name="vote" type="submit" value="up">
-          <img  src='https://cdn2.iconfinder.com/data/icons/happy-smile-1/512/44_smiley-128.png'>
+          <img style ="margin:auto; max-width: 50px; max-height: 50px;"  src='https://cdn2.iconfinder.com/data/icons/happy-smile-1/512/44_smiley-128.png'>
          <p> Up votes:
           <%= image.upvotes %>
         </p>
-        <button class="card-panel hoverable" type="submit" name="vote" value="down">
-          <img src='https://cdn2.iconfinder.com/data/icons/happy-smile-1/512/32_smiley-128.png'>
+        <button class="circle card-panel hoverable" type="submit" name="vote" value="down">
+          <img  style ="margin:auto; max-width: 50px; max-height: 50px;"  src='https://cdn2.iconfinder.com/data/icons/happy-smile-1/512/32_smiley-128.png'>
            <p> Down votes:
           <%= image.downvotes %>
         </p>
